@@ -1,45 +1,80 @@
-# Raidak (رائدك) - Saudi Aqar AI Project Specification
+# Raidak (ريدك) - Project Specification
 
 ## 1. Project Overview
-**Raidak (رائدك) للتنمية العقارية المستدامة** is a sophisticated web platform designed to empower users in the Saudi Arabian real estate market. The platform allows users to evaluate properties and analyze investments using specific geographic and environmental data, providing "intelligent" recommendations to increase property value through sustainability standards and market trends (aligned with Saudi Vision 2030).
+Raidak (ريدك) is a premium, intelligent, and localized real estate valuation platform designed exclusively for the Saudi market. Aligning with the aesthetics and digital transformation goals of Saudi Vision 2030, the platform evaluates properties based on core basics, location analytics, investment potential, and sustainability scores. The goal is to provide an elite user experience through flawless UI/UX, localized terminology, and dynamic design.
 
 ## 2. Functional Requirements
-- **Authentication**: Secure user entry and route protection system powered strictly by Firebase Auth (Email/Google).
-- **Data-Driven Logic**: An analysis engine entirely powered by a static `market_data.json` file containing metrics for key Saudi districts (e.g., Riyadh, Jeddah). Metrics include average price per $m^2$, growth rates, and Vision 2030 future projects impact.
-- **Dynamic Valuation**: Real-time calculation of "Fair Market Price" based on (Area * District Rate), adjusted for property age and specific features.
-- **Sustainability Engine**: A scoring system evaluating the property's environmental impact, providing cost-saving recommendations and value increments.
-- **Comparison Logic**: Functionality to compare current input data against static benchmark records stored within the system.
+- **Authentication**: Firebase-based Email/Password authentication. Protected routes must ensure that only authenticated users can access the dashboard and valuation tools.
+- **Localization**: 100% Professional Arabic interface. Strict RTL (Right-to-Left) layout across all devices using CSS logical properties.
+- **Mock AI Valuation Engine**: Deterministic valuation and scoring mechanism reading from a local static JSON dataset (`src/data/market_data.json`) covering at least 20 major Saudi cities.
+- **Responsive Design**: Mobile-first architecture that easily scales to large desktop displays without sacrificing usability or aesthetics.
+- **Data Visualization**: Deliver an interactive simulation of heatmaps and comparative property data structured within a high-end Bento-box style layout.
 
-## 3. Core Features
-- **Smart Valuation**: Displays the estimated fair price and provides a visual comparison against the local district average.
-- **Investment Index**: Projects a 5-year ROI (Return on Investment) percentage and assigns a Risk Level (Low, Medium, High).
-- **Sustainability Index**: Evaluates eco-efficiency and offers "Smart Tips" (e.g., "Installing solar panels may increase property value by 5-8%").
-- **Location Analysis**: A simulated heatmap/map interface visualizing growth zones and risk areas based on proximity to major infrastructure projects.
+## 3. Detailed Screen Descriptions
 
-## 4. Screens & UI Architecture
-### A. Landing Page
-- Prominent search bar for "District Name" or "Deed Number."
-- Quick-action cards for primary services (Valuation, Investment, Sustainability).
-- Interactive map placeholder and a "How it Works" section.
+### 3.1. Landing Page
+- **Hero Section**: High-impact visuals with a clear, engaging value proposition and a premium search/entry bar (Call to Action: "ابدأ التقييم", "تسجيل الدخول").
+- **Features Highlight**: Elegant grid showcasing the platform's core capabilities (Smart Valuation, ROI Projections, Sustainability).
+- **Aesthetics**: Glassmorphism elements, curated color palettes (Blues and Greens), subtle micro-animations on hover, and a highly polished corporate feel.
 
-### B. Authentication Screens
-- Clean, localized Login and Sign-up pages with user roles (Investor, Developer, Buyer).
+### 3.2. Multi-Step Valuation Wizard (Form)
+A 4-step progressive disclosure form with robust state management to preserve user progress seamlessly.
+1. **الأساسيات (Basics)**: Property type, age, total area (m²), number of rooms/floors.
+2. **الموقع (Location)**: Selective dropdowns or an interactive map-picker for City (20+ cities) and District.
+3. **الاستثمار (Investment)**: Current rental income, intended holding period, and purpose of purchase.
+4. **الاستدامة (Sustainability)**: Checkboxes/switches for green features (e.g., solar panels, smart home technology, insulation, water saving).
 
-### C. Multi-Step Valuation Form (Input)
-- **Step 1 (Basics)**: City, District, Property Type, Area, Age, and Room Count.
-- **Step 2 (Location)**: Proximity to schools, public services, and main transport arteries.
-- **Step 3 (Investment)**: Expected purchase price and primary goal (Residency, Investment, or Rental).
-- **Step 4 (Environment)**: Toggles for thermal insulation, solar panels, water-saving systems, and estimated electricity usage.
+### 3.3. Analysis Dashboard (Bento-Grid)
+- **Layout**: Modern Bento-grid displaying comprehensive, multifaceted valuation results compactly.
+- **Smart Valuation (التقييم الذكي)**: Prominent display of the estimated property value formatted in SAR.
+- **ROI Projections (توقعات العائد على الاستثمار)**: Data visualizations (Charts/Graphs) projecting 5-10 year value appreciation and anticipated rental yields.
+- **Sustainability Score (مؤشر الاستدامة)**: A visual gauge or metric summarizing the property's eco-friendliness and alignment with green building practices.
 
-### D. Analysis Dashboard (Output)
-- **Price Card**: Current valuation with a comparative bar chart.
-- **Investment Card**: ROI projections and risk badges.
-- **Sustainability Card**: Ecological score and dynamic improvement tips.
-- **Comparison Section**: An interactive table comparing the user's property against 2-3 market benchmarks.
+### 3.4. Interactive Analytics
+- **Heatmaps**: A simulated spatial mapping visual indicating high-value or high-demand zones using smooth gradients and interactive nodes.
+- **Property Comparisons**: Side-by-side metric comparisons of the assessed property against the district / city average.
 
-## 5. Technical Constraints
-- **Stack**: Next.js (App Router), Tailwind CSS, Lucide-React (iconography).
-- **Language & Layout**: Primary UI strictly in Arabic with full RTL (Right-to-Left) support grid/layout patterns.
-- **Database Simulation**: All real estate metrics, market data, and AI responses must be mocked and reside exclusively in `src/data/market_data.json`. No external DB (except Firebase Auth) or real AI endpoints are permitted.
-- **State Management**: React Hooks/Context for managing the multi-step form data flow across components.
-- **Design Language**: Modern, minimalist, and professional (Vision 2030 aesthetic), premium glassmorphism/cards concepts where applicable.
+## 4. Data Schema (`src/data/market_data.json`)
+
+The entire application relies on a comprehensive, localized mock database containing the necessary metrics to compute values. 
+
+```json
+{
+  "cities": [
+    {
+      "id": "riyadh",
+      "name_ar": "الرياض",
+      "districts": [
+        {
+          "id": "al_malqa",
+          "name_ar": "الملقا",
+          "base_price_sqm": 8500,
+          "demand_index": 0.95,
+          "roi_annual_percent": 6.5,
+          "sustainability_baseline": 70
+        }
+      ]
+    }
+  ],
+  "property_types": [
+    {
+      "id": "villa",
+      "name_ar": "فيلا",
+      "multiplier": 1.2
+    },
+    {
+      "id": "apartment",
+      "name_ar": "شقة",
+      "multiplier": 0.85
+    }
+  ],
+  "sustainability_features": [
+    {
+      "id": "solar",
+      "name_ar": "طاقة شمسية",
+      "score_boost": 15
+    }
+  ]
+}
+```
+*Note: The final implementation of the JSON must be fully populated with approximately 20 major cities and their core districts to provide a realistic demonstration of the platform's intelligence.*

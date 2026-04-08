@@ -1,0 +1,162 @@
+{
+  "cities": [
+    {
+      "id": "riyadh",
+      "name_ar": "الرياض",
+      "districts": [
+        { "id": "al_malqa", "name_ar": "الملقا", "base_price_sqm": 8500, "demand_index": 1.2, "roi_annual_percent": 6.5, "sustainability_baseline": 75 },
+        { "id": "al_yasmin", "name_ar": "الياسمين", "base_price_sqm": 7200, "demand_index": 1.1, "roi_annual_percent": 6.2, "sustainability_baseline": 70 },
+        { "id": "al_narjis", "name_ar": "النرجس", "base_price_sqm": 6800, "demand_index": 1.15, "roi_annual_percent": 6.8, "sustainability_baseline": 72 }
+      ]
+    },
+    {
+      "id": "jeddah",
+      "name_ar": "جدة",
+      "districts": [
+        { "id": "ash_shati", "name_ar": "الشاطئ", "base_price_sqm": 9000, "demand_index": 1.1, "roi_annual_percent": 5.8, "sustainability_baseline": 80 },
+        { "id": "al_rawdah", "name_ar": "الروضة", "base_price_sqm": 7500, "demand_index": 1.05, "roi_annual_percent": 5.5, "sustainability_baseline": 70 }
+      ]
+    },
+    {
+      "id": "mecca",
+      "name_ar": "مكة المكرمة",
+      "districts": [
+        { "id": "al_aziziyah", "name_ar": "العزيزية", "base_price_sqm": 12000, "demand_index": 1.5, "roi_annual_percent": 8.0, "sustainability_baseline": 65 },
+        { "id": "ash_shauqiyah", "name_ar": "الشوقية", "base_price_sqm": 6500, "demand_index": 1.1, "roi_annual_percent": 6.0, "sustainability_baseline": 60 }
+      ]
+    },
+    {
+      "id": "medina",
+      "name_ar": "المدينة المنورة",
+      "districts": [
+        { "id": "al_rawabi", "name_ar": "الروابي", "base_price_sqm": 5500, "demand_index": 1.1, "roi_annual_percent": 6.2, "sustainability_baseline": 68 }
+      ]
+    },
+    {
+      "id": "dammam",
+      "name_ar": "الدمام",
+      "districts": [
+        { "id": "ash_shati_east", "name_ar": "الشاطئ الشرقي", "base_price_sqm": 6000, "demand_index": 1.05, "roi_annual_percent": 5.9, "sustainability_baseline": 72 }
+      ]
+    },
+    {
+      "id": "khobar",
+      "name_ar": "الخبر",
+      "districts": [
+        { "id": "al_hizam_al_akhdar", "name_ar": "الحزام الأخضر", "base_price_sqm": 8000, "demand_index": 1.15, "roi_annual_percent": 6.3, "sustainability_baseline": 78 }
+      ]
+    },
+    {
+      "id": "tabuk",
+      "name_ar": "تبوك",
+      "districts": [
+        { "id": "al_murooj", "name_ar": "المروج", "base_price_sqm": 3500, "demand_index": 1.0, "roi_annual_percent": 5.5, "sustainability_baseline": 60 }
+      ]
+    },
+    {
+      "id": "buraydah",
+      "name_ar": "بريدة",
+      "districts": [
+        { "id": "al_isfakar", "name_ar": "الاسكان", "base_price_sqm": 3200, "demand_index": 0.95, "roi_annual_percent": 5.2, "sustainability_baseline": 55 }
+      ]
+    },
+    {
+      "id": "khamis_mushait",
+      "name_ar": "خميس مشيط",
+      "districts": [
+        { "id": "ash_sharafiyah", "name_ar": "الشرفية", "base_price_sqm": 3000, "demand_index": 0.9, "roi_annual_percent": 5.0, "sustainability_baseline": 50 }
+      ]
+    },
+    {
+      "id": "abha",
+      "name_ar": "أبها",
+      "districts": [
+        { "id": "al_manhal", "name_ar": "المنهل", "base_price_sqm": 4500, "demand_index": 1.05, "roi_annual_percent": 5.8, "sustainability_baseline": 70 }
+      ]
+    },
+    {
+      "id": "hofuf",
+      "name_ar": "الهفوف",
+      "districts": [
+        { "id": "al_salmaniyah", "name_ar": "السلمانية", "base_price_sqm": 3800, "demand_index": 0.95, "roi_annual_percent": 5.4, "sustainability_baseline": 58 }
+      ]
+    },
+    {
+      "id": "mubarraz",
+      "name_ar": "المبرز",
+      "districts": [
+        { "id": "al_rashidiyah", "name_ar": "الراشدية", "base_price_sqm": 3600, "demand_index": 0.92, "roi_annual_percent": 5.3, "sustainability_baseline": 55 }
+      ]
+    },
+    {
+      "id": "hail",
+      "name_ar": "حائل",
+      "districts": [
+        { "id": "an_naqrah", "name_ar": "النقرة", "base_price_sqm": 3100, "demand_index": 0.9, "roi_annual_percent": 5.1, "sustainability_baseline": 52 }
+      ]
+    },
+    {
+      "id": "najran",
+      "name_ar": "نجران",
+      "districts": [
+        { "id": "al_faisaliyah", "name_ar": "الفيصلية", "base_price_sqm": 2800, "demand_index": 0.85, "roi_annual_percent": 4.8, "sustainability_baseline": 45 }
+      ]
+    },
+    {
+      "id": "hafar_al_batin",
+      "name_ar": "حفر الباطن",
+      "districts": [
+        { "id": "al_rabwah", "name_ar": "الربوة", "base_price_sqm": 2500, "demand_index": 0.8, "roi_annual_percent": 4.5, "sustainability_baseline": 40 }
+      ]
+    },
+    {
+      "id": "jubail",
+      "name_ar": "الجبيل",
+      "districts": [
+        { "id": "jalmudah", "name_ar": "جلمودة", "base_price_sqm": 5500, "demand_index": 1.2, "roi_annual_percent": 6.5, "sustainability_baseline": 75 }
+      ]
+    },
+    {
+      "id": "kharj",
+      "name_ar": "الخرج",
+      "districts": [
+        { "id": "al_huda", "name_ar": "الهضبة", "base_price_sqm": 3200, "demand_index": 0.95, "roi_annual_percent": 5.2, "sustainability_baseline": 55 }
+      ]
+    },
+    {
+      "id": "qatif",
+      "name_ar": "القطيف",
+      "districts": [
+        { "id": "al_majeediyah", "name_ar": "المجيدية", "base_price_sqm": 4200, "demand_index": 1.0, "roi_annual_percent": 5.6, "sustainability_baseline": 62 }
+      ]
+    },
+    {
+      "id": "qunfudhah",
+      "name_ar": "القنفذة",
+      "districts": [
+        { "id": "alkhalidiyah", "name_ar": "الخالدية", "base_price_sqm": 2200, "demand_index": 0.8, "roi_annual_percent": 4.2, "sustainability_baseline": 40 }
+      ]
+    },
+    {
+      "id": "yanbu",
+      "name_ar": "ينبع",
+      "districts": [
+        { "id": "yanbu_al_sinaiyah", "name_ar": "ينبع الصناعية", "base_price_sqm": 5000, "demand_index": 1.1, "roi_annual_percent": 6.1, "sustainability_baseline": 72 }
+      ]
+    }
+  ],
+  "property_types": [
+    { "id": "villa", "name_ar": "فيلا", "multiplier": 1.25 },
+    { "id": "apartment", "name_ar": "شقة", "multiplier": 0.9 },
+    { "id": "land", "name_ar": "أرض", "multiplier": 1.0 },
+    { "id": "building", "name_ar": "عمارة", "multiplier": 1.15 },
+    { "id": "commercial", "name_ar": "تجاري", "multiplier": 1.4 }
+  ],
+  "sustainability_features": [
+    { "id": "solar_panels", "name_ar": "ألواح شمسية", "score_boost": 15, "value_multiplier": 1.05 },
+    { "id": "thermal_insulation", "name_ar": "عزل حراري عالي الجودة", "score_boost": 10, "value_multiplier": 1.03 },
+    { "id": "water_recycling", "name_ar": "نظام تدوير المياه", "score_boost": 12, "value_multiplier": 1.04 },
+    { "id": "smart_lighting", "name_ar": "إضاءة ذكية موفرة للطاقة", "score_boost": 8, "value_multiplier": 1.02 },
+    { "id": "ev_charging", "name_ar": "شاحن سيارات كهربائية", "score_boost": 10, "value_multiplier": 1.02 }
+  ]
+}
