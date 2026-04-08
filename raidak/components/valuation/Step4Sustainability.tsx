@@ -30,7 +30,7 @@ export const Step4Sustainability = () => {
         {marketData.sustainability_features.map((feature) => (
           <div
             key={feature.id}
-            className="flex items-center justify-between p-4 rounded-2xl border border-border bg-white dark:bg-zinc-900 shadow-sm"
+            className="flex items-center justify-between p-4 rounded-2xl border border-border bg-white shadow-sm"
           >
             <div className="space-y-0.5">
               <Label className="text-base font-bold">{feature.name_ar}</Label>

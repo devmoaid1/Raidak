@@ -17,7 +17,7 @@ export const Step1Basics = () => {
           value={request.propertyType}
           onValueChange={(val) => updateRequest({ propertyType: val })}
         >
-          <SelectTrigger id="propertyType" className="w-full h-12 bg-white dark:bg-zinc-900 border-border">
+          <SelectTrigger id="propertyType" className="w-full h-12 bg-white border-border">
             <SelectValue placeholder="اختر نوع العقار" />
           </SelectTrigger>
           <SelectContent>
@@ -38,7 +38,7 @@ export const Step1Basics = () => {
           placeholder="مثلاً: 400"
           value={request.area || ""}
           onChange={(e) => updateRequest({ area: Number(e.target.value) })}
-          className="h-12 bg-white dark:bg-zinc-900 border-border"
+          className="h-12 bg-white border-border"
         />
       </div>
 
@@ -50,7 +50,7 @@ export const Step1Basics = () => {
           placeholder="مثلاً: 5"
           value={request.age || ""}
           onChange={(e) => updateRequest({ age: Number(e.target.value) })}
-          className="h-12 bg-white dark:bg-zinc-900 border-border"
+          className="h-12 bg-white border-border"
         />
       </div>
     </div>

@@ -25,7 +25,7 @@ export const Step2Location = () => {
           value={selectedCity}
           onValueChange={handleCityChange}
         >
-          <SelectTrigger id="city" className="w-full h-12 bg-white dark:bg-zinc-900 border-border">
+          <SelectTrigger id="city" className="w-full h-12 bg-white border-border">
             <SelectValue placeholder="اختر المدينة" />
           </SelectTrigger>
           <SelectContent>
@@ -45,7 +45,7 @@ export const Step2Location = () => {
           onValueChange={(val) => updateRequest({ districtId: val })}
           disabled={!selectedCity}
         >
-          <SelectTrigger id="district" className="w-full h-12 bg-white dark:bg-zinc-900 border-border">
+          <SelectTrigger id="district" className="w-full h-12 bg-white border-border">
             <SelectValue placeholder={selectedCity ? "اختر الحي" : "يجب اختيار المدينة أولاً"} />
           </SelectTrigger>
           <SelectContent>

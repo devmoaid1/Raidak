@@ -33,7 +33,7 @@ export default function Home() {
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-            ريدك هي منصتك المتكاملة لتحليل الأصول العقارية في المملكة العربية السعودية. 
+            رائدك هي منصتك المتكاملة لتحليل الأصول العقارية في المملكة العربية السعودية. 
             احصل على تقييمات دقيقة، توقعات استثمارية، ومؤشرات استدامة في ثوانٍ.
           </p>
           
@@ -57,7 +57,7 @@ export default function Home() {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">مميزات منصة ريدك</h2>
+            <h2 className="text-3xl md:text-5xl font-heading font-bold mb-4">مميزات منصة رائدك</h2>
             <p className="text-muted-foreground text-lg">نجمع بين البيانات الضخمة والرؤية المستقبلية لتمكين قراراتك</p>
           </div>
 
@@ -79,7 +79,7 @@ export default function Home() {
             </Card>
 
             {/* Bento Item 2 */}
-            <Card className="overflow-hidden border-none shadow-xl bg-white dark:bg-zinc-900 group">
+            <Card className="overflow-hidden border-none shadow-xl bg-white group glass-card">
               <CardContent className="p-8 h-80 flex flex-col justify-between">
                 <div className="size-12 rounded-xl bg-secondary/20 flex items-center justify-center text-secondary mb-6">
                   <Leaf className="size-6" />
@@ -94,7 +94,7 @@ export default function Home() {
             </Card>
 
             {/* Bento Item 3 */}
-            <Card className="overflow-hidden border-none shadow-xl bg-white dark:bg-zinc-900 group">
+            <Card className="overflow-hidden border-none shadow-xl bg-white group glass-card">
               <CardContent className="p-8 h-80 flex flex-col justify-between">
                 <div className="size-12 rounded-xl bg-orange-500/20 flex items-center justify-center text-orange-500 mb-6">
                   <TrendingUp className="size-6" />
@@ -137,7 +137,7 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center text-white">
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">هل أنت جاهز لاتخاذ قرارك القادم؟</h2>
           <p className="text-primary-foreground/80 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
-            انضم إلى آلاف المستثمرين والملاك الذين يثقون في تحليلات ريدك يوميًا.
+            انضم إلى آلاف المستثمرين والملاك الذين يثقون في تحليلات رائدك يوميًا.
           </p>
           <Link href="/valuation">
             <Button size="lg" className="rounded-full h-14 px-10 text-lg font-extrabold bg-white text-primary hover:bg-zinc-100 shadow-2xl">

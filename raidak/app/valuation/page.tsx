@@ -34,7 +34,7 @@ const ValuationWizard = () => {
   if (loading) {
     return (
       <div className="max-w-xl mx-auto py-20">
-        <Card className="border-none shadow-2xl bg-white dark:bg-zinc-950 overflow-hidden">
+        <Card className="border-none shadow-2xl bg-white group glass-card overflow-hidden">
           <ProcessingSimulation />
         </Card>
       </div>
@@ -77,7 +77,7 @@ const ValuationWizard = () => {
       </div>
 
       {/* Main Form Card */}
-      <Card className="border-none shadow-2xl bg-white dark:bg-zinc-950 overflow-hidden">
+      <Card className="border-none shadow-2xl bg-white group glass-card overflow-hidden">
         <CardContent className="p-8">
           {renderStep()}
 
