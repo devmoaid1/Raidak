@@ -14,6 +14,9 @@ import { Toaster } from "@/components/ui/sonner";
 export const metadata: Metadata = {
   title: "رائدك | التقييم العقاري الذكي",
   description: "المنصة الرائدة للتقييم العقاري الذكي في المملكة العربية السعودية",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 import { Navbar } from "@/components/layout/Navbar";

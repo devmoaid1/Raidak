@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export const Footer = () => {
   return (
@@ -7,15 +8,14 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2 space-y-6">
-            <Link href="/" className="flex items-center gap-2 group">
-              <div className="size-10 premium-gradient rounded-xl flex items-center justify-center text-white font-black text-xl shadow-lg">
-                ر
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-heading font-black text-primary leading-none">
-                  رائدك
-                </span>
-                <span className="text-[8px] font-bold text-secondary uppercase tracking-[0.2em]">Raidak Smart</span>
+            <Link href="/" className="flex items-center group">
+              <div className="relative h-20 w-40 group-hover:scale-105 transition-all duration-300">
+                <Image
+                  src="/logo.png"
+                  alt="رائدك - Raidak"
+                  fill
+                  className="object-contain"
+                />
               </div>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">

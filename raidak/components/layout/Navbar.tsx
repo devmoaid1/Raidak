@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useAuth } from "@/providers/AuthProvider";
 import { Button } from "@/components/ui/button";
 import {
@@ -52,17 +53,15 @@ export const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group relative">
-          <div className="size-11 premium-gradient rounded-2xl flex items-center justify-center text-white font-black text-2xl shadow-xl shadow-primary/20 group-hover:scale-105 group-hover:rotate-3 transition-all duration-300">
-            ر
-          </div>
-          <div className="flex flex-col">
-            <span className="text-2xl font-heading font-black tracking-tight text-primary leading-none">
-              رائدك
-            </span>
-            <span className="text-[10px] font-bold text-secondary uppercase tracking-[0.2em]">
-              Raidak Smart
-            </span>
+        <Link href="/" className="flex items-center group relative">
+          <div className="relative h-14 w-28 group-hover:scale-105 transition-all duration-300">
+            <Image
+              src="/logo.png"
+              alt="رائدك - Raidak"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
         </Link>
 
