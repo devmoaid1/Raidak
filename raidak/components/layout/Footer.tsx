@@ -1,7 +1,15 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export const Footer = () => {
+  const pathname = usePathname();
+  const isAuthPage = pathname === "/login" || pathname === "/signup";
+
+  if (isAuthPage) return null;
+
   return (
     <footer className="bg-white border-t border-border/40 mt-auto">
       <div className="container mx-auto px-4 py-16">

@@ -17,12 +17,23 @@ import { cn } from "@/lib/utils";
 import { signOut } from "firebase/auth";
 import { auth } from "@/lib/firebase/config";
 import { toast } from "sonner";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 export const Navbar = () => {
   const { user } = useAuth();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
+
+  const isAuthPage = pathname === "/login" || pathname === "/signup";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,6 +52,8 @@ export const Navbar = () => {
       toast.error("حدث خطأ أثناء تسجيل الخروج");
     }
   };
+
+  if (isAuthPage) return null;
 
   return (
     <nav
@@ -118,13 +131,83 @@ export const Navbar = () => {
             </Link>
           )}
 
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden hover:bg-white/50 rounded-xl"
-          >
-            <Menu className="size-6 text-primary" />
-          </Button>
+          <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+            <SheetTrigger asChild>
+              <Button
+                variant="ghost"
+                size="icon"
+                className="md:hidden hover:bg-white/50 rounded-xl"
+              >
+                <Menu className="size-6 text-primary" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px] sm:w-[350px] p-0 border-none glass-card">
+              <SheetHeader className="p-6 border-b border-border/10">
+                <SheetTitle className="text-start">
+                  <div className="relative h-12 w-24">
+                    <Image
+                      src="/logo.png"
+                      alt="رائدك - Raidak"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                </SheetTitle>
+              </SheetHeader>
+              <div className="flex flex-col gap-2 p-4">
+                <Link
+                  href="/valuation"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex items-center gap-3 p-4 rounded-xl text-foreground font-bold hover:bg-primary/5 hover:text-primary transition-all group"
+                >
+                  <Calculator className="size-5 text-secondary group-hover:scale-110 transition-transform" />
+                  التقييم العقاري
+                </Link>
+                <Link
+                  href="/market-analysis"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex items-center gap-3 p-4 rounded-xl text-foreground font-bold hover:bg-primary/5 hover:text-primary transition-all group"
+                >
+                  <Sparkles className="size-5 text-secondary group-hover:rotate-12 transition-transform" />
+                  تحليل السوق
+                </Link>
+                <Link
+                  href="/dashboard"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex items-center gap-3 p-4 rounded-xl text-foreground font-bold hover:bg-primary/5 hover:text-primary transition-all group"
+                >
+                  <LayoutDashboard className="size-5 text-secondary group-hover:scale-110 transition-transform" />
+                  لوحة البيانات
+                </Link>
+                
+                <div className="mt-4 pt-4 border-t border-border/10">
+                  {user ? (
+                    <div className="flex flex-col gap-4 p-2">
+                       <span className="text-sm font-bold text-muted-foreground px-2">{user.email}</span>
+                       <Button
+                        onClick={() => {
+                          handleLogout();
+                          setIsMobileMenuOpen(false);
+                        }}
+                        variant="outline"
+                        className="w-full justify-start rounded-xl h-12 px-4 font-bold border-destructive/20 text-destructive hover:bg-destructive/5 hover:text-destructive"
+                      >
+                        <LogOut className="size-5 me-3" />
+                        خروج
+                      </Button>
+                    </div>
+                  ) : (
+                    <Link href="/login" onClick={() => setIsMobileMenuOpen(false)}>
+                      <Button className="w-full rounded-xl h-12 font-bold premium-gradient text-white shadow-lg">
+                        <LogIn className="size-5 me-2" />
+                        دخول
+                      </Button>
+                    </Link>
+                  )}
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </nav>
