@@ -11,6 +11,7 @@ import {
   Menu,
   Sparkles,
   LogOut,
+  Search,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
@@ -101,6 +102,13 @@ export const Navbar = () => {
             <LayoutDashboard className="size-4 text-secondary group-hover:scale-110 transition-transform" />
             لوحة البيانات
           </Link>
+          <Link
+            href="/explore"
+            className="text-sm font-bold text-foreground/80 hover:text-primary transition-all flex items-center gap-2 group"
+          >
+            <Search className="size-4 text-secondary group-hover:scale-110 transition-transform" />
+            استكشف العقارات
+          </Link>
         </div>
 
         {/* Actions */}
@@ -179,6 +187,15 @@ export const Navbar = () => {
                   <LayoutDashboard className="size-5 text-secondary group-hover:scale-110 transition-transform" />
                   لوحة البيانات
                 </Link>
+                <Link
+                  href="/explore"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="flex items-center gap-3 p-4 rounded-xl text-foreground font-bold hover:bg-primary/5 hover:text-primary transition-all group"
+                >
+                  <Search className="size-5 text-secondary group-hover:scale-110 transition-transform" />
+                  استكشف العقارات
+                </Link>
+
                 
                 <div className="mt-4 pt-4 border-t border-border/10">
                   {user ? (

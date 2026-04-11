@@ -28,13 +28,13 @@ export default function Home() {
           </div>
           
           <h1 className="text-4xl md:text-7xl font-heading font-extrabold tracking-tight text-foreground mb-6 leading-tight max-w-4xl mx-auto">
-            مستقبل <span className="text-primary italic">التقييم العقاري</span> <br /> 
-            بين يديك بدقة <span className="text-secondary">الذكاء الاصطناعي</span>
+            مستقبل العقار في <br /> 
+            <span className="text-primary italic">محافظة القنفذة</span> بدقة <span className="text-secondary">الذكاء الاصطناعي</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
-            رائدك هي منصتك المتكاملة لتحليل الأصول العقارية في المملكة العربية السعودية. 
-            احصل على تقييمات دقيقة، توقعات استثمارية، ومؤشرات استدامة في ثوانٍ.
+            رائدك هي المنصة الأولى المتخصصة في تحليل الأصول العقارية بمحافظة القنفذة. 
+            احصل على تقييمات دقيقة لأحياء المحافظة، وتوقعات استثمارية معززة بمؤشرات الاستدامة.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -71,7 +71,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-2xl font-heading font-bold mb-3">تقييم ذكي فوري</h3>
                   <p className="text-muted-foreground text-lg max-w-md">
-                    محرك تقييم يعتمد على أكثر من 20 متغيرًا سوقيًا، بما في ذلك الموقع، نوع العقار، والطلب الحالي في أكثر من 20 مدينة سعودية.
+                    محرك تقييم مخصص لأحياء القنفذة، يعتمد على البيانات الحية للمخططات المعتمدة وتوجهات السوق المحلي.
                   </p>
                 </div>
                 <div className="absolute bottom-[-20px] end-[-20px] size-60 bg-primary/10 rounded-full blur-[40px] group-hover:bg-primary/20 transition-all" />
@@ -115,9 +115,9 @@ export default function Home() {
                   <div className="size-12 rounded-xl bg-secondary/20 flex items-center justify-center text-secondary mb-6">
                     <Globe className="size-6" />
                   </div>
-                  <h3 className="text-2xl font-heading font-bold mb-3">تغطية شاملة للمملكة</h3>
+                  <h3 className="text-2xl font-heading font-bold mb-3">تغطية شاملة للمحافظة</h3>
                   <p className="text-muted-foreground text-lg max-w-md">
-                    بيانات محدثة لحظيًا تغطي كافة أحياء المدن الكبرى والمناطق الواعدة، لضمان أدق النتائج في أي مكان.
+                    بيانات محدثة لحظيًا تغطي كافة أحياء القنفذة من الكورنيش إلى القوز وحلي، لضمان أدق النتائج الاستثمارية.
                   </p>
                 </div>
                 <div className="absolute bottom-[-20px] start-[-20px] size-60 bg-secondary/10 rounded-full blur-[40px] group-hover:bg-secondary/20 transition-all" />
