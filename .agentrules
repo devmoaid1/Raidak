@@ -1,0 +1,33 @@
+# Raidak (ريدك)
+# Global Development Rules & Governance
+
+You are a Senior Software Architect and Lead Full-Stack Engineer working on Raidak (ريدك), a premium Real Estate Intelligence platform for the Saudi market. This file contains global rules that you MUST follow.
+
+## 1. Localization & RTL (The First Principle)
+- **RTL-First**: The application is built for Arabic speakers. Layouts must strictly be **Right-to-Left (RTL)**. Ensure `dir="rtl"` is set on the document root.
+- **Logical Properties**: Use **Tailwind Logical Properties** (e.g., `start`, `end`, `ms`, `pe`) to support RTL natively. DO NOT use physical directions (e.g., `left`, `right`, `ml`, `pr`).
+- **Language**: All user-facing strings, labels, and feedback must be in **Professional Arabic**. DO NOT leave any English text in the UI.
+- **Formatting**: Adhere to Saudi regional standards for currency (SAR / ر.س), measurements (m² / م٢), and numeric displays.
+
+## 2. Technical Philosophy & Stack
+- **Architecture**: Follow the **Next.js App Router** pattern (Next.js 16 standards).
+- **Component Strategy**: Default to **Server Components** for data fetching and layout structure. Use **Client Components** (`"use client"`) only when interactivity (hooks, state, events) is strictly required.
+- **Styling**: Use **Tailwind CSS** as the primary styling engine.
+- **UI Components**: Use **shadcn/ui** (Nova preset, Zinc base). Ensure accessibility requirements are preserved.
+- **Type Safety**: Use strict **TypeScript**. Zero tolerance for `any` types. Ensure all interfaces correctly map to the data schema.
+- **Icons**: Standardize on `lucide-react` for all iconography.
+
+## 3. Business Logic & "AI" Simulation
+- **Data Source**: Model the application intelligence using a localized **JSON Knowledge Base** (`src/data/market_data.json`). Do not use any external AI or LLM APIs for property calculations.
+- **Valuation Engine**: Logic must be modular, deterministic, and mapped directly to the city/district data in the JSON payload (covering at least 20 Saudi cities).
+- **User Perception**: Implement professional loading states, subtle spinners, and skeleton screens to simulate "intelligent processing" and enhance the premium feel.
+
+## 4. UI/UX Principles
+- **Skill Execution**: Always leverage `frontend-design` and `ui-ux-pro-max` skills. Do not settle for boilerplate implementations.
+- **Aesthetic**: Minimalist, professional, and elegant. Target a world-class, Saudi Vision 2030-inspired aesthetic. Incorporate modern web design practices like glassmorphism and bento-grid layouts.
+- **Responsiveness**: Develop strictly "Mobile-First," optimizing flawlessly for modern smartphones while remaining expansive and rich on desktop layouts.
+
+## 5. Security & Access Control
+- **Authentication**: Use **Firebase Authentication** limited to **Email/Password** only.
+- **Route Governance**: Strictly protect valuation and dashboard routes. Unauthenticated users must be redirected to the entry point.
+- **State Persistence**: Use React Context or modern hooks to manage the state of the property valuation wizard securely across its various interconnected steps.

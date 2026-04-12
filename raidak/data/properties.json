@@ -1,0 +1,98 @@
+[
+  {
+    "id": "qnf-1",
+    "name_ar": "فيلا الكورنيش - حي الغربية",
+    "type": "residential",
+    "city": "qunfudhah",
+    "district": "al_gharbiyah",
+    "price": 1850000,
+    "area": 450,
+    "sustainability_baseline": 82,
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1000",
+    "features": ["solar_panels", "thermal_insulation", "water_recycling"]
+  },
+  {
+    "id": "qnf-2",
+    "name_ar": "شقة أفق - حي الخالدية",
+    "type": "residential",
+    "city": "qunfudhah",
+    "district": "alkhalidiyah",
+    "price": 750000,
+    "area": 160,
+    "sustainability_baseline": 45,
+    "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1000",
+    "features": ["smart_lighting"]
+  },
+  {
+    "id": "qnf-3",
+    "name_ar": "مجمع القنفذة التجاري",
+    "type": "commercial",
+    "city": "qunfudhah",
+    "district": "as_souq",
+    "price": 12000000,
+    "area": 3500,
+    "sustainability_baseline": 75,
+    "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000",
+    "features": ["solar_panels", "ev_charging"]
+  },
+  {
+    "id": "qnf-4",
+    "name_ar": "أرض استثمارية - حي الشرقية",
+    "type": "land",
+    "city": "qunfudhah",
+    "district": "al_sharqiyah",
+    "price": 950000,
+    "area": 800,
+    "sustainability_baseline": 30,
+    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1000",
+    "features": []
+  },
+  {
+    "id": "qnf-5",
+    "name_ar": "فيلا النخيل - حي السلام",
+    "type": "residential",
+    "city": "qunfudhah",
+    "district": "as_salam",
+    "price": 1200000,
+    "area": 300,
+    "sustainability_baseline": 70,
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1000",
+    "features": ["thermal_insulation"]
+  },
+  {
+    "id": "qnf-6",
+    "name_ar": "عمارة سكنية - حي الشامية",
+    "type": "building",
+    "city": "qunfudhah",
+    "district": "al_shamiyah",
+    "price": 4500000,
+    "area": 1200,
+    "sustainability_baseline": 65,
+    "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000",
+    "features": ["smart_lighting", "thermal_insulation"]
+  },
+  {
+    "id": "qnf-7",
+    "name_ar": "فيلا بحرية - حي الناعمية",
+    "type": "residential",
+    "city": "qunfudhah",
+    "district": "al_naamiyah",
+    "price": 2300000,
+    "area": 500,
+    "sustainability_baseline": 88,
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000",
+    "features": ["solar_panels", "water_recycling", "ev_charging"]
+  },
+  {
+    "id": "qnf-8",
+    "name_ar": "أرض زراعية متطورة - حلي",
+    "type": "land",
+    "city": "qunfudhah",
+    "district": "hali",
+    "price": 500000,
+    "area": 2000,
+    "sustainability_baseline": 92,
+    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1000",
+    "features": ["solar_panels", "water_recycling"]
+  }
+]
