@@ -13,6 +13,14 @@
           "sustainability_baseline": 92
         },
         {
+          "id": "al_burj",
+          "name_ar": "البرج",
+          "base_price_sqm": 2700,
+          "demand_index": 0.93,
+          "roi_annual_percent": 8.5,
+          "sustainability_baseline": 88
+        },
+        {
           "id": "al_corniche",
           "name_ar": "الكورنيش",
           "base_price_sqm": 3800,
@@ -232,8 +240,14 @@
       "name_ar": "واجهة القنفذة البحرية",
       "type": "waterfront_development",
       "coordinates": [
-        { "lat": 19.1235, "lng": 41.0772 },
-        { "lat": 19.1288, "lng": 41.0805 }
+        {
+          "lat": 19.1235,
+          "lng": 41.0772
+        },
+        {
+          "lat": 19.1288,
+          "lng": 41.0805
+        }
       ],
       "expected_completion": "2027",
       "impact_metric_multiplier": 1.15
