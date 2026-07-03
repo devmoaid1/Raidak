@@ -5,12 +5,44 @@
       "name_ar": "القنفذة",
       "districts": [
         {
-          "id": "alkhalidiyah",
-          "name_ar": "الخالدية",
-          "base_price_sqm": 2200,
-          "demand_index": 0.8,
-          "roi_annual_percent": 4.2,
-          "sustainability_baseline": 40
+          "id": "al_shatei",
+          "name_ar": "الشاطئ",
+          "base_price_sqm": 4200,
+          "demand_index": 0.97,
+          "roi_annual_percent": 7.5,
+          "sustainability_baseline": 92
+        },
+        {
+          "id": "al_burj",
+          "name_ar": "البرج",
+          "base_price_sqm": 2700,
+          "demand_index": 0.93,
+          "roi_annual_percent": 8.5,
+          "sustainability_baseline": 88
+        },
+        {
+          "id": "al_corniche",
+          "name_ar": "الكورنيش",
+          "base_price_sqm": 3800,
+          "demand_index": 0.95,
+          "roi_annual_percent": 6.8,
+          "sustainability_baseline": 85
+        },
+        {
+          "id": "al_yasmine",
+          "name_ar": "الياسمين",
+          "base_price_sqm": 3100,
+          "demand_index": 0.91,
+          "roi_annual_percent": 6.2,
+          "sustainability_baseline": 78
+        },
+        {
+          "id": "al_rawdah",
+          "name_ar": "الروضة",
+          "base_price_sqm": 2800,
+          "demand_index": 0.88,
+          "roi_annual_percent": 5.8,
+          "sustainability_baseline": 72
         },
         {
           "id": "al_shamiyah",
@@ -18,15 +50,15 @@
           "base_price_sqm": 2300,
           "demand_index": 0.85,
           "roi_annual_percent": 4.5,
-          "sustainability_baseline": 45
+          "sustainability_baseline": 58
         },
         {
-          "id": "al_naamiyah",
-          "name_ar": "الناعمية",
-          "base_price_sqm": 2100,
-          "demand_index": 0.78,
-          "roi_annual_percent": 4.0,
-          "sustainability_baseline": 35
+          "id": "alkhalidiyah",
+          "name_ar": "الخالدية",
+          "base_price_sqm": 2200,
+          "demand_index": 0.80,
+          "roi_annual_percent": 4.2,
+          "sustainability_baseline": 52
         },
         {
           "id": "al_sharqiyah",
@@ -34,7 +66,7 @@
           "base_price_sqm": 2400,
           "demand_index": 0.86,
           "roi_annual_percent": 4.8,
-          "sustainability_baseline": 42
+          "sustainability_baseline": 48
         },
         {
           "id": "al_gharbiyah",
@@ -42,7 +74,23 @@
           "base_price_sqm": 2250,
           "demand_index": 0.82,
           "roi_annual_percent": 4.3,
-          "sustainability_baseline": 40
+          "sustainability_baseline": 45
+        },
+        {
+          "id": "as_souq",
+          "name_ar": "السوق",
+          "base_price_sqm": 2500,
+          "demand_index": 0.90,
+          "roi_annual_percent": 5.0,
+          "sustainability_baseline": 44
+        },
+        {
+          "id": "al_nuzha",
+          "name_ar": "النزهة",
+          "base_price_sqm": 2150,
+          "demand_index": 0.79,
+          "roi_annual_percent": 4.1,
+          "sustainability_baseline": 42
         },
         {
           "id": "as_salam",
@@ -53,12 +101,36 @@
           "sustainability_baseline": 38
         },
         {
+          "id": "al_naamiyah",
+          "name_ar": "الناعمية",
+          "base_price_sqm": 2100,
+          "demand_index": 0.78,
+          "roi_annual_percent": 4.0,
+          "sustainability_baseline": 35
+        },
+        {
           "id": "an_nahdah",
           "name_ar": "النهضة",
           "base_price_sqm": 2000,
           "demand_index": 0.77,
           "roi_annual_percent": 4.3,
           "sustainability_baseline": 35
+        },
+        {
+          "id": "al_aziziyah",
+          "name_ar": "العزيزية",
+          "base_price_sqm": 1950,
+          "demand_index": 0.74,
+          "roi_annual_percent": 4.0,
+          "sustainability_baseline": 32
+        },
+        {
+          "id": "al_rabwah",
+          "name_ar": "الربوة",
+          "base_price_sqm": 1750,
+          "demand_index": 0.71,
+          "roi_annual_percent": 4.6,
+          "sustainability_baseline": 28
         },
         {
           "id": "al_muhammadia",
@@ -69,28 +141,28 @@
           "sustainability_baseline": 30
         },
         {
-          "id": "as_souq",
-          "name_ar": "السوق",
-          "base_price_sqm": 2500,
-          "demand_index": 0.9,
-          "roi_annual_percent": 5.0,
-          "sustainability_baseline": 40
-        },
-        {
-          "id": "hali",
-          "name_ar": "حلي",
-          "base_price_sqm": 1500,
-          "demand_index": 0.7,
-          "roi_annual_percent": 5.2,
-          "sustainability_baseline": 30
-        },
-        {
           "id": "quz",
           "name_ar": "القوز",
           "base_price_sqm": 1800,
           "demand_index": 0.75,
           "roi_annual_percent": 5.0,
           "sustainability_baseline": 35
+        },
+        {
+          "id": "al_waha",
+          "name_ar": "الواحة",
+          "base_price_sqm": 1600,
+          "demand_index": 0.68,
+          "roi_annual_percent": 4.8,
+          "sustainability_baseline": 22
+        },
+        {
+          "id": "hali",
+          "name_ar": "حلي",
+          "base_price_sqm": 1500,
+          "demand_index": 0.70,
+          "roi_annual_percent": 5.2,
+          "sustainability_baseline": 30
         },
         {
           "id": "al_muzaylif",
